@@ -47,6 +47,6 @@ module.exports = {
     ArticlesModel ,
     UpcomingEventsModel , 
     DueFeesDashboardModel , 
-    ClientsRatingModel
+    C
    
 }

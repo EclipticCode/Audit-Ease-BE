@@ -67,8 +67,8 @@ app.get('/duesfeesdashboards' , async (req , res) => {
 
 app.get('/clientsratings' , async (req , res) => {
     try{
-      const clientsdata = await ClientsRatingModel.find();
-      console.log(clientsdata)
+      const clientsdata = await DueFeesDashboardModel.find();
+      console.log(duefeesdashboard)
       res.json(clientsdata)
     } catch(err){
         console.error("Error fetching Due Fees details:" , err);

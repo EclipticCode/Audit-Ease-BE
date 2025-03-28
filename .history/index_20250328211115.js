@@ -67,7 +67,7 @@ app.get('/duesfeesdashboards' , async (req , res) => {
 
 app.get('/clientsratings' , async (req , res) => {
     try{
-      const clientsdata = await ClientsRatingModel.find();
+      const clientsdata = await cli.find();
       console.log(clientsdata)
       res.json(clientsdata)
     } catch(err){

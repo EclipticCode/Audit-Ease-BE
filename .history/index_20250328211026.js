@@ -65,17 +65,6 @@ app.get('/duesfeesdashboards' , async (req , res) => {
     }
 })
 
-app.get('/clientsratings' , async (req , res) => {
-    try{
-      const clientsdata = await ClientsRatingModel.find();
-      console.log(clientsdata)
-      res.json(clientsdata)
-    } catch(err){
-        console.error("Error fetching Due Fees details:" , err);
-        res.status(500).json({ error: err.message });
-    }
-})
-
 app.listen(4000, () => {
     console.log("Server started at port 4000")
 })

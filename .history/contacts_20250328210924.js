@@ -40,13 +40,12 @@ const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingevents" , UpcomingEventsSchema)
 const DueFeesDashboardModel = mongoose.model("duesfeesdashboards" , DueFeesDashboardSchema)
-const ClientsRatingModel = mongoose.model("clientsratings" , ClientsRatingSchema)
+const ClientsRating
 
 module.exports = {
     ContactModel , 
     ArticlesModel ,
     UpcomingEventsModel , 
-    DueFeesDashboardModel , 
-    ClientsRatingModel
+    DueFeesDashboardModel
    
 }
