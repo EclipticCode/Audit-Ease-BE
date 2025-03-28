@@ -44,13 +44,13 @@ app.get('/getArticles', async (req, res) => {
     }
 });
 
-app.get('/getUpcomingEvents', async (req, res) => {
+app.get('/getArticles', async (req, res) => {
     try {
-        const upcomingEvents = await UpcomingEventsModel.find();
-        console.log(upcomingEvents)
-        res.json(upcomingEvents);
+        const contacts = await ArticlesModel.find();
+        console.log(contacts)
+        res.json(contacts);
     } catch (err) {
-        console.error("Error fetching events details:", err);
+        console.error("Error fetching contacts:", err);
         res.status(500).json({ error: err.message });
     }
 });

@@ -31,6 +31,6 @@ const UpcomingEventsModel = mongoode.model("upcomingEvents" , UpcomingEventsSche
 module.exports = {
     ContactModel , 
     ArticlesModel ,
-    UpcomingEventsModel
+
    
 }

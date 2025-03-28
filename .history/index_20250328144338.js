@@ -11,7 +11,6 @@ app.use(bodyParser.json())
 connectDb()
 app.use(express.json())
 
-
 app.get('/', (req,res) => {
     if(mongoose.connection.readyState === 1){
         res.send("Server working fine and connected to Database successfully")
@@ -44,16 +43,6 @@ app.get('/getArticles', async (req, res) => {
     }
 });
 
-app.get('/getUpcomingEvents', async (req, res) => {
-    try {
-        const upcomingEvents = await UpcomingEventsModel.find();
-        console.log(upcomingEvents)
-        res.json(upcomingEvents);
-    } catch (err) {
-        console.error("Error fetching events details:", err);
-        res.status(500).json({ error: err.message });
-    }
-});
 
 
 

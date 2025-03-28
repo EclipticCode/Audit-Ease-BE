@@ -18,19 +18,17 @@ const ArticlesSchema = new mongoose.Schema({
 })
 
 const UpcomingEventsSchema = new mongoose.Schema({
-    no : { type : String} , 
-    events : { type : String } ,
-    date : { type : String },
+    no : { type : String} ,
+    events : { type : String} ,
+    date : { type : String} ,
 })
-
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
-const UpcomingEventsModel = mongoode.model("upcomingEvents" , UpcomingEventsSchema)
+
 
 module.exports = {
     ContactModel , 
     ArticlesModel ,
-    UpcomingEventsModel
-   
+    UpcomingEventsModel ,
 }

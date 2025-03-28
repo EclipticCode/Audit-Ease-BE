@@ -44,16 +44,6 @@ app.get('/getArticles', async (req, res) => {
     }
 });
 
-app.get('/getUpcomingEvents', async (req, res) => {
-    try {
-        const upcomingEvents = await UpcomingEventsModel.find();
-        console.log(upcomingEvents)
-        res.json(upcomingEvents);
-    } catch (err) {
-        console.error("Error fetching events details:", err);
-        res.status(500).json({ error: err.message });
-    }
-});
 
 
 

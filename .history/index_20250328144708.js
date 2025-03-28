@@ -50,7 +50,7 @@ app.get('/getUpcomingEvents', async (req, res) => {
         console.log(upcomingEvents)
         res.json(upcomingEvents);
     } catch (err) {
-        console.error("Error fetching events details:", err);
+        console.error("Error fetching contacts:", err);
         res.status(500).json({ error: err.message });
     }
 });

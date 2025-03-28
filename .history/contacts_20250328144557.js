@@ -26,11 +26,11 @@ const UpcomingEventsSchema = new mongoose.Schema({
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
-const UpcomingEventsModel = mongoode.model("upcomingEvents" , UpcomingEventsSchema)
+const upcomingEventsModel = mongoode.model("upcomingEvents" , upcomingEventsSchema)
 
 module.exports = {
     ContactModel , 
     ArticlesModel ,
-    UpcomingEventsModel
+
    
 }
