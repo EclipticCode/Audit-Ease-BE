@@ -32,9 +32,9 @@ app.get('/getContacts', async (req, res) => {
     }
 });
 
-app.get('/getArticles', async (req, res) => {
+app.get('/getContacts', async (req, res) => {
     try {
-        const contacts = await ArticlesModel.find();
+        const contacts = await ContactModel.find();
         console.log(contacts)
         res.json(contacts);
     } catch (err) {

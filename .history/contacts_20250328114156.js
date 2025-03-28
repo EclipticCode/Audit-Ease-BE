@@ -18,9 +18,7 @@ const ArticlesSchema = new mongoose.Schema({
 })
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
-const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 
 module.exports = {
-    ContactModel , 
-    ArticlesModel
+    ContactModel
 }

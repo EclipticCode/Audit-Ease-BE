@@ -32,17 +32,6 @@ app.get('/getContacts', async (req, res) => {
     }
 });
 
-app.get('/getArticles', async (req, res) => {
-    try {
-        const contacts = await ArticlesModel.find();
-        console.log(contacts)
-        res.json(contacts);
-    } catch (err) {
-        console.error("Error fetching contacts:", err);
-        res.status(500).json({ error: err.message });
-    }
-});
-
 
 app.listen(4000, () => {
     console.log("Server started at port 4000")

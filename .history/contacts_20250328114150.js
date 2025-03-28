@@ -14,13 +14,11 @@ const ArticlesSchema = new mongoose.Schema({
     name : { type : String } ,
     tasksAssigned : { type : String },
     deadline : { type : String },
-    pastTask : { type : String },
+    pastTask : 
 })
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
-const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 
 module.exports = {
-    ContactModel , 
-    ArticlesModel
+    ContactModel
 }

@@ -22,5 +22,5 @@ const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 
 module.exports = {
     ContactModel , 
-    ArticlesModel
+    Art
 }
