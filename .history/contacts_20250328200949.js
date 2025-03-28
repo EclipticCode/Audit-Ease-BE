@@ -28,12 +28,12 @@ const DueFeesDashboardSchema = new mongoose.Schema({
     clientName : { type : String} , 
     firmName : { type : String} , 
     dueAmount : { type : String} , 
-})
+} , { collection: 'duefeesdashboard' })
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingEvents" , UpcomingEventsSchema)
-const DueFeesDashboardModel = mongoose.model("duesfeesdashboards" , DueFeesDashboardSchema)
+const DueFeesDashboardModel = mongoose.model("duesfeesdashboard" , DueFeesDashboardSchema)
 
 module.exports = {
     ContactModel , 

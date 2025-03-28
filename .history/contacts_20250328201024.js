@@ -28,7 +28,7 @@ const DueFeesDashboardSchema = new mongoose.Schema({
     clientName : { type : String} , 
     firmName : { type : String} , 
     dueAmount : { type : String} , 
-})
+} , { collection: 'duefeesdashboard' })
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)

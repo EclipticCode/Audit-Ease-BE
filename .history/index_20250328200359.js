@@ -54,7 +54,7 @@ app.get('/getUpcomingEvents', async (req, res) => {
     }
 });
 
-app.get('/duesfeesdashboards' , async (req , res) => {
+app.get('/duefeesdashboard' , async (req , res) => {
     try{
       const duefeesdashboard = await DueFeesDashboardModel.find();
       console.log(duefeesdashboard)
