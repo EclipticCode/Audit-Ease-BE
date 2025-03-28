@@ -17,7 +17,7 @@ const ArticlesSchema = new mongoose.Schema({
     pastTask : { type : String },
 })
 
-const upcomingEventsSchema = new mongoose.Schema({
+const upcomingEvents = new mongoose.Schema({
     no : { type : String} ,
     events : { type : String} ,
     date : { type : String} ,
@@ -25,10 +25,9 @@ const upcomingEventsSchema = new mongoose.Schema({
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
-const upcomingEventsModel = mongoose.model("upcomingEvents" , upcomingEventsSchema)
+const 
 
 module.exports = {
     ContactModel , 
-    ArticlesModel ,
-    upcomingEventsModel
+    ArticlesModel
 }

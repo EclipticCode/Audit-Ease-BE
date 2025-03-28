@@ -48,12 +48,8 @@ app.get('/upcomingEvents' , async(req , res) => {
         const upcomingEvents = await upcomingEventsModel.find();
         console.log(upcomingEvents)
         res.json(upcomingEvents);
-    } catch(err){
-        console.error("Error fetching Events data:" , err);
-        res.status(500).json({ error: err.message });
     }
 })
-
 
 app.listen(4000, () => {
     console.log("Server started at port 4000")

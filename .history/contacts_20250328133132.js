@@ -29,6 +29,5 @@ const upcomingEventsModel = mongoose.model("upcomingEvents" , upcomingEventsSche
 
 module.exports = {
     ContactModel , 
-    ArticlesModel ,
-    upcomingEventsModel
+    ArticlesModel
 }

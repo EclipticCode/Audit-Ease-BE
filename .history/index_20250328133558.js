@@ -54,7 +54,6 @@ app.get('/upcomingEvents' , async(req , res) => {
     }
 })
 
-
 app.listen(4000, () => {
     console.log("Server started at port 4000")
 })
