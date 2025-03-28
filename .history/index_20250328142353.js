@@ -3,7 +3,7 @@ const cors = require ("cors")
 const bodyParser  = require ('body-parser')
 const { connectDb , mongoose } = require ('./db')
 require('dotenv').config();
-const {ContactModel , ArticlesModel , UpcomingEventsModel} = require('./contacts')
+const {ContactModel , ArticlesModel , upcomingEventsModel} = require('./contacts')
 
 const app = express()
 app.use(cors())
@@ -45,9 +45,9 @@ app.get('/getArticles', async (req, res) => {
 
 app.get('/upcomingEvents' , async(req , res) => {
     try {
-        const UpcomingEvents = await UpcomingEventsModel.find();
-        console.log(UpcomingEvents)
-        res.json(UpcomingEvents);
+        const upcomingEvents = await upcomingEventsModel.find();
+        console.log(upcomingEvents)
+        res.json(upcomingEvents);
     } catch(err){
         console.error("Error fetching Events data:" , err);
         res.status(500).json({ error: err.message });
