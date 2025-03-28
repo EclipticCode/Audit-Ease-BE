@@ -3,7 +3,7 @@ const cors = require ("cors")
 const bodyParser  = require ('body-parser')
 const { connectDb , mongoose } = require ('./db')
 require('dotenv').config();
-const {ContactModel} = require('./contacts')
+const ContactModel = require('./contacts')
 
 const app = express()
 app.use(cors())
@@ -29,7 +29,7 @@ app.get('/', (req,res) => {
 app.get('/getContacts', async (req, res) => {
     try {
         const contacts = await ContactModel.find();
-        console.log(contacts)
+        console.log(con)
         res.json(contacts);
     } catch (err) {
         console.error("Error fetching contacts:", err);

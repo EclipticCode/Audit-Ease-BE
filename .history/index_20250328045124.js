@@ -3,7 +3,7 @@ const cors = require ("cors")
 const bodyParser  = require ('body-parser')
 const { connectDb , mongoose } = require ('./db')
 require('dotenv').config();
-const {ContactModel} = require('./contacts')
+const {ContactMode}l = require('./contacts')
 
 const app = express()
 app.use(cors())
