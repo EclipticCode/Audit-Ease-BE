@@ -39,6 +39,6 @@ module.exports = {
     ContactModel , 
     ArticlesModel ,
     UpcomingEventsModel , 
-    DueFeesDashboardModel
+    Due
    
 }

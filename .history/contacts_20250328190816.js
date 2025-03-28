@@ -38,7 +38,6 @@ const DueFeesDashboardModel = mongoose.model("duesfeesdashboard" , DueFeesDashbo
 module.exports = {
     ContactModel , 
     ArticlesModel ,
-    UpcomingEventsModel , 
-    DueFeesDashboardModel
+    UpcomingEventsModel
    
 }

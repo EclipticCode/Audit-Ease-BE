@@ -59,7 +59,7 @@ app.get('/duefeesdashboard' , async (req , res) => {
     try{
       const duefeesdashboard = await DueFeesDashboardModel.find();
       console.log(duefeesdashboard)
-      res.json(duefeesdashboard)
+      res.json
     } catch(err){
         console.error("Error fetching Due Fees details:" , err);
         res.status(500).json({ error: err.message });

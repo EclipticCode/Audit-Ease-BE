@@ -57,13 +57,8 @@ app.get('/getUpcomingEvents', async (req, res) => {
 
 app.get('/duefeesdashboard' , async (req , res) => {
     try{
-      const duefeesdashboard = await DueFeesDashboardModel.find();
-      console.log(duefeesdashboard)
-      res.json(duefeesdashboard)
-    } catch(err){
-        console.error("Error fetching Due Fees details:" , err);
-        res.status(500).json({ error: err.message });
-    }
+
+    } catch
 })
 
 app.listen(4000, () => {

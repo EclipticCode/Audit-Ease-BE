@@ -23,22 +23,15 @@ const UpcomingEventsSchema = new mongoose.Schema({
     date : { type : String },
 })
 
-const DueFeesDashboardSchema = new mongoose.Schema({
-    sNo : { type : String} , 
-    clientName : { type : String} , 
-    firmName : { type : String} , 
-    dueAmount : { type : String} , 
-})
+const Due
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingEvent" , UpcomingEventsSchema)
-const DueFeesDashboardModel = mongoose.model("duesfeesdashboard" , DueFeesDashboardSchema)
 
 module.exports = {
     ContactModel , 
     ArticlesModel ,
-    UpcomingEventsModel , 
-    DueFeesDashboardModel
+    UpcomingEventsModel
    
 }
