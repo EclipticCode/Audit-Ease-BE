@@ -34,7 +34,7 @@ const ClientsRatingSchema = new mongoose.Schema({
     sNo : { type : String} , 
     name : { type : String} , 
     rating : { type : String} , 
-    email : { type : String} , 
+    rating : { type : String} , 
 })
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
