@@ -89,11 +89,11 @@ app.get('/availablearticles' , async (req , res) => {
 
 app.get('/auditdatas' , async (req , res) => {
     try{
-      const auditdata = await AuditDataModel.find();
+      const auditdata = await AvailableArticlesModel.find();
       console.log(auditdata)
-      res.json(auditdata)
+      res.json(articlesdata)
     } catch(err){
-        console.error("Error fetching audit details:" , err);
+        console.error("Error fetching articles details:" , err);
         res.status(500).json({ error: err.message });
     }
 })

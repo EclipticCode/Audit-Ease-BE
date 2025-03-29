@@ -43,21 +43,17 @@ const AvailableArticlesSchema = new mongoose.Schema({
     email : { type : String} , 
 })
 
-const AuditDataSchema = new mongoose.Schema({
+const AuditData = new mongoose.Schema({
+    sNo : { type : String} , 
     name : { type : String} , 
-    completed : { type : String} , 
-    inprogress : { type : String} , 
-    pending: { type : String} , 
+    email : { type : String} , 
 })
-
-
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingevents" , UpcomingEventsSchema)
 const DueFeesDashboardModel = mongoose.model("duesfeesdashboards" , DueFeesDashboardSchema)
 const ClientsRatingModel = mongoose.model("clientsratings" , ClientsRatingSchema)
 const AvailableArticlesModel = mongoose.model("availablearticles" , AvailableArticlesSchema)
-const AuditDataModel = mongoose.model("auditdatas" , AuditDataSchema)
 
 module.exports = {
     ContactModel , 
@@ -65,7 +61,6 @@ module.exports = {
     UpcomingEventsModel , 
     DueFeesDashboardModel , 
     ClientsRatingModel ,
-    AvailableArticlesModel , 
-    AuditDataModel
+    AvailableArticlesModel
    
 }

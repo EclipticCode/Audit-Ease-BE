@@ -93,7 +93,7 @@ app.get('/auditdatas' , async (req , res) => {
       console.log(auditdata)
       res.json(auditdata)
     } catch(err){
-        console.error("Error fetching audit details:" , err);
+        console.error("Error fetching articles details:" , err);
         res.status(500).json({ error: err.message });
     }
 })

@@ -3,7 +3,7 @@ const cors = require ("cors")
 const bodyParser  = require ('body-parser')
 const { connectDb , mongoose } = require ('./db')
 require('dotenv').config();
-const {ContactModel , ArticlesModel , UpcomingEventsModel , DueFeesDashboardModel , ClientsRatingModel , AvailableArticlesModel , AuditDataModel } = require('./contacts')
+const {ContactModel , ArticlesModel , UpcomingEventsModel , DueFeesDashboardModel , ClientsRatingModel , AvailableArticlesModel , Au} = require('./contacts')
 
 const app = express()
 app.use(cors())
@@ -83,17 +83,6 @@ app.get('/availablearticles' , async (req , res) => {
       res.json(articlesdata)
     } catch(err){
         console.error("Error fetching articles details:" , err);
-        res.status(500).json({ error: err.message });
-    }
-})
-
-app.get('/auditdatas' , async (req , res) => {
-    try{
-      const auditdata = await AuditDataModel.find();
-      console.log(auditdata)
-      res.json(auditdata)
-    } catch(err){
-        console.error("Error fetching audit details:" , err);
         res.status(500).json({ error: err.message });
     }
 })

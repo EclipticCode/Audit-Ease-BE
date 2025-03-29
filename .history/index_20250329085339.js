@@ -87,16 +87,6 @@ app.get('/availablearticles' , async (req , res) => {
     }
 })
 
-app.get('/auditdatas' , async (req , res) => {
-    try{
-      const auditdata = await AuditDataModel.find();
-      console.log(auditdata)
-      res.json(auditdata)
-    } catch(err){
-        console.error("Error fetching audit details:" , err);
-        res.status(500).json({ error: err.message });
-    }
-})
 
 app.listen(4000, () => {
     console.log("Server started at port 4000")

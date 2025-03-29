@@ -49,8 +49,6 @@ const AuditDataSchema = new mongoose.Schema({
     inprogress : { type : String} , 
     pending: { type : String} , 
 })
-
-
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingevents" , UpcomingEventsSchema)
