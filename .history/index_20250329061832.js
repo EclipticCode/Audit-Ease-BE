@@ -82,7 +82,7 @@ app.get('/availablearticles' , async (req , res) => {
       console.log(articlesdata)
       res.json(articlesdata)
     } catch(err){
-        console.error("Error fetching articles details:" , err);
+        console.error("Error fetching Due Fees details:" , err);
         res.status(500).json({ error: err.message });
     }
 })

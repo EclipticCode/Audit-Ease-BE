@@ -76,17 +76,6 @@ app.get('/clientsratings' , async (req , res) => {
     }
 })
 
-app.get('/availablearticles' , async (req , res) => {
-    try{
-      const articlesdata = await AvailableArticlesModel.find();
-      console.log(articlesdata)
-      res.json(articlesdata)
-    } catch(err){
-        console.error("Error fetching articles details:" , err);
-        res.status(500).json({ error: err.message });
-    }
-})
-
 app.listen(4000, () => {
     console.log("Server started at port 4000")
 })

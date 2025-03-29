@@ -78,11 +78,11 @@ app.get('/clientsratings' , async (req , res) => {
 
 app.get('/availablearticles' , async (req , res) => {
     try{
-      const articlesdata = await AvailableArticlesModel.find();
-      console.log(articlesdata)
-      res.json(articlesdata)
+      const clientsdata = await ava.find();
+      console.log(clientsdata)
+      res.json(clientsdata)
     } catch(err){
-        console.error("Error fetching articles details:" , err);
+        console.error("Error fetching Due Fees details:" , err);
         res.status(500).json({ error: err.message });
     }
 })

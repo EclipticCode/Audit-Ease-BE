@@ -37,25 +37,19 @@ const ClientsRatingSchema = new mongoose.Schema({
     email : { type : String} , 
 })
 
-const AvailableArticlesSchema = new mongoose.Schema({
-    sNo : { type : String} , 
-    name : { type : String} , 
-    email : { type : String} , 
-})
+
 
 const ContactModel = mongoose.model("contacts" , ContactSchema)
 const ArticlesModel = mongoose.model("articles" , ArticlesSchema)
 const UpcomingEventsModel = mongoose.model("upcomingevents" , UpcomingEventsSchema)
 const DueFeesDashboardModel = mongoose.model("duesfeesdashboards" , DueFeesDashboardSchema)
 const ClientsRatingModel = mongoose.model("clientsratings" , ClientsRatingSchema)
-const AvailableArticlesModel = mongoose.model("availablearticles" , AvailableArticlesSchema)
 
 module.exports = {
     ContactModel , 
     ArticlesModel ,
     UpcomingEventsModel , 
     DueFeesDashboardModel , 
-    ClientsRatingModel ,
-    AvailableArticlesModel
+    ClientsRatingModel
    
 }
